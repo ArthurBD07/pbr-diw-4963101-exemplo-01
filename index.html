@@ -4,7 +4,7 @@
 <head>
     <title>Exemplo 01</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
     <style>
         p {
             color: blue;
@@ -20,12 +20,27 @@
             padding: 1rem;
         }
 
+        .container {
+            border: 1px solid #a3a3a3;
+            box-shadow: .3rem .3rem .2rem .01rem #a3a3a3;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
         .item {
             color: #f7f707;
-            background-color: #1e9646;
+            background-color: #139713;
             padding: 1rem;
             width: 6rem;
             border-radius: .5rem;
+        }
+        #carro{
+            width: 105px; height: 80px;
+        }
+        #mat{
+            width: 105px; height: 80px;
+
         }
     </style>
 </head>
@@ -39,9 +54,14 @@
         Isto é uma DIV.
     </div>
 
-    <div class="item">Isto é uma DIV.</div>
-    <div class="item">Isto é uma DIV.</div>
-    <div class="item">Isto é uma DIV.</div>
+    <div class="container">
+        <div class="item"><img id="carro"src="https://www.ospaparazzi.com/imagem/201106/22125926.jpg" alt="Carros"></div>
+        <div class="item"><img id="mat"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVXJ33at_fCDNPNnIDX7nbPQYSfrE2QpNlw&s" alt=""></div>
+        <div class="item">Isto é uma DIV.</div>        
+        <div class="item">Isto é uma DIV.</div>
+        <div class="item">Isto é uma DIV.</div>
+        <div class="item">Isto é uma DIV.</div>        
+    </div>
 </body>
 
 </html>
